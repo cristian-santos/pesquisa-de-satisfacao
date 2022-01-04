@@ -1,0 +1,89 @@
+body{ 
+    background:lightgray;
+    padding:50px 50px;
+  }
+  
+  header{
+    background:#f3f3f3;
+    border:1px solid lavender;
+    border-bottom:none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width:500px;
+    margin:auto;
+  }
+
+  header .container{
+    margin:auto; 
+    width:100%;
+  }
+  
+  header .container .titulo{
+    position:relative; 
+    bottom:4px; 
+    color:black;
+  } 
+  
+  header .container .usuario{
+    position:relative; 
+    bottom:-10px; 
+    color:steelblue;} 
+  
+  .btn{
+    width:200px;}
+  
+  .tela{
+    margin-bottom:50px;
+  }
+
+  .tela .container{
+    width:100%;
+    border:1px solid lavender;
+    padding:20px 40px; 
+    background:#f2f2f2;}
+  
+  .tela .container, header .container{
+    width:500px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin:auto;
+  }
+  
+  .tela img{ 
+    margin-top: -40px; 
+    width: 190px;
+    height:190px;
+  }
+  
+  .tela-login h1, .tela h1{
+    color:black;
+    font-size: 30px;
+    margin-top: -20px;
+  }
+  .titulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .form-group label{
+    margin:10px 0px;
+  } 
+  .align-right{
+    text-align:center;
+  }
+  
+  .tela-cadastro .container{
+    padding:20px;}
+  
+  input[type="text"], input[type="password"], 
+  label .form-control{
+    background:lightyellow;
+    width: 200px;
+  }
+  
+  textarea{
+    height:200px;
+  }
+  
+  .tela-manual .form-group{
+    margin-bottom:40px;  
+  }
