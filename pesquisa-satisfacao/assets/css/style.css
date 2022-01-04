@@ -1,0 +1,340 @@
+* { box-sizing: border-box; }
+
+.titulo{
+  font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+.container{
+  margin-top: -20px;
+}
+
+div#image img {
+  display: block;
+  margin: 5px auto;
+  width: 200px;
+  margin-top: -30px;
+  margin-bottom: -50px;
+  
+}
+
+.row {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: -40px;
+  font-size: 20px;   
+  width: 100%;
+  background-color: #fff;
+}
+.row .text{
+  font-size: 15px;
+}
+
+.animated {
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
+ }
+
+  /* Select
+-----------------------------------------------------------------------------------*/
+.select {
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 50px;
+}
+
+ /* Emogi 3
+-----------------------------------------------------------------------------------*/
+.gentileza {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.gentileza-0 {
+  filter: grayscale(100%);
+}
+
+.gentileza > input {
+  display: none;
+}
+
+.gentileza > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.gentileza > input:checked ~ label,
+.gentileza > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.gentileza > input:not(:checked) ~ label:hover,
+.gentileza > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.emoji-wrapper3 {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emoji-wrapper3:before,
+.emoji-wrapper3:after{
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.emoji3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.emoji3 > svg {
+  margin: 15px 0; 
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#gentileza-1:hover ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-100px); }
+#gentileza-2:hover ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-200px); }
+#gentileza-3:hover ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-300px); }
+#gentileza-4:hover ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-400px); }
+#gentileza-5:hover ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-500px); }
+
+
+#gentileza-1:checked ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-100px); }
+#gentileza-2:checked ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-200px); }
+#gentileza-3:checked ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-300px); }
+#gentileza-4:checked ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-400px); }
+#gentileza-5:checked ~ .emoji-wrapper3 > .emoji3 { transform: translateY(-500px); }
+
+
+
+
+
+/* Emogi 1
+-----------------------------------------------------------------------------------*/
+.satisfacao {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 150px;
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 60px;
+}
+
+.satisfacao-0 {
+  filter: grayscale(100%);
+}
+
+.satisfacao > input {
+  display: none;
+}
+
+.satisfacao > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.satisfacao > input:checked ~ label,
+.satisfacao > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.satisfacao > input:not(:checked) ~ label:hover,
+.satisfacao > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.emoji-wrapper {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.emoji-wrapper:before,
+.emoji-wrapper:after{
+  content: "";
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+}
+
+.emoji > svg {
+  margin: 15px 0; 
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+#satisfacao-1:hover ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+#satisfacao-2:hover ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
+#satisfacao-3:hover ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
+#satisfacao-4:hover ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
+#satisfacao-5:hover ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
+
+#satisfacao-1:checked ~ .emoji-wrapper > .emoji { transform: translateY(-100px); }
+#satisfacao-2:checked ~ .emoji-wrapper > .emoji { transform: translateY(-200px); }
+#satisfacao-3:checked ~ .emoji-wrapper > .emoji { transform: translateY(-300px); }
+#satisfacao-4:checked ~ .emoji-wrapper > .emoji { transform: translateY(-400px); }
+#satisfacao-5:checked ~ .emoji-wrapper > .emoji { transform: translateY(-500px); }
+
+
+
+/* Emogi 2
+-----------------------------------------------------------------------------------*/
+.indicacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    height: 150px;
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 60px;
+  }
+  
+.indicacao-0 {
+    filter: grayscale(100%);
+  }
+  
+.indicacao > input {
+    display: none;
+  }
+  
+.indicacao > label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76%;
+    transition: .3s;
+}
+  
+.indicacao > input:checked ~ label,
+.indicacao > input:checked ~ label ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  }
+  
+  
+  .indicacao > input:not(:checked) ~ label:hover,
+  .indicacao > input:not(:checked) ~ label:hover ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  }
+  
+  .emoji-wrapper2 {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .emoji-wrapper2:before,
+  .emoji-wrapper2:after{
+    content: "";
+    height: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .emoji2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+  }
+  
+  .emoji2 > svg {
+    margin: 15px 0; 
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+  
+  #indicacao-1:hover ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-100px); }
+  #indicacao-2:hover ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-200px); }
+  #indicacao-3:hover ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-300px); }
+  #indicacao-4:hover ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-400px); }
+  #indicacao-5:hover ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-500px); }
+  
+  #indicacao-1:checked ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-100px); }
+  #indicacao-2:checked ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-200px); }
+  #indicacao-3:checked ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-300px); }
+  #indicacao-4:checked ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-400px); }
+  #indicacao-5:checked ~ .emoji-wrapper2 > .emoji2 { transform: translateY(-500px); }
+
+input{
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+}
